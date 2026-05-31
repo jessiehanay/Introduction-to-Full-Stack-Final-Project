@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mypage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="links-row">
+      <a class="link" href="/">Home</a>
+    </div>
+
+    <h1 id="page-title">This is your page</h1>
+    <p id="status" aria-live="polite"></p>
+
+    <hr />
+
+    <h2>Post message</h2>
+    <form id="post-form">
+      <label>
+        Post message:
+        <input id="message-input" name="message" maxlength="300" required />
+      </label>
+      <button type="submit">Post</button>
+    </form>
+
+    <hr />
+
+    <h2>View messages</h2>
+    <form id="other-user-form">
+      <label>
+        Other username:
+        <input id="other-username" name="otherUsername" />
+      </label>
+      <button type="submit">Show user messages</button>
+    </form>
+
+    <button id="all-messages-btn" type="button">Show all messages</button>
+
+    <h2>Messages</h2>
+    <div id="messages" class="messages"></div>
+  </div>
+
+  <script src="mypage.js"></script>
+</body>
+</html>

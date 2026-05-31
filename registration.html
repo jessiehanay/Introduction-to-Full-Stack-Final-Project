@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Register</h1>
+    <div class="subtle">Create your account</div>
+
+    <form id="registration-form">
+      <label>
+        Username:
+        <input id="reg-username" name="username" autocomplete="username" required />
+      </label>
+
+      <label>
+        Password:
+        <input id="reg-password" name="password" type="password" autocomplete="new-password" required />
+      </label>
+
+      <label>
+        Confirm password:
+        <input id="reg-confirm" name="confirm" type="password" autocomplete="new-password" required />
+      </label>
+
+      <button type="submit">Create account</button>
+
+      <div class="links-row">
+        <a class="link" href="/">Home</a>
+      </div>
+    </form>
+
+    <p id="reg-status" aria-live="polite"></p>
+  </div>
+
+  <script src="registration.js"></script>
+</body>
+</html>
